@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Div Layout</title>
+    <link rel="stylesheet" href="CSS/StyleSheet1.css">
+    <link rel="stylesheet" href="CSS/StyleSheet_Menu.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="container">
+            <div class="header">
+                <table dir="ltr">
+                     <tr>
+                        <td><img src="images/banner1.png" alt="Company Picture" width="120" height="50"></td>
+                        <td><h1 style="color: white;">Mubashir website</h1></td>
+                    </tr>
+                </table>
+            <ul>
+                <li><a class="active" id="op_Home">Home</a></li>
+                <li><a id="op_Contact">Contact</a></li>
+                <li><a id="op_Teams">Our Teams</a></li>
+                <li><a id="op_joinUs">join Us</a></li>
+                  
+                <li style="float:right"><a id="op_About">About</a></li>
+            </ul>
+        </div>
+
+        <div id="home_section" class="section">
+            <center>
+                <h2>Main page</h2>
+                <img src="images/MicrosoftTeams-image.png" alt="Company Picture" width="100" height="100">
+            </center>
+            <br /><br /><br /><br />
+            <p>&emsp;&nbsp;&nbsp;<b>Our business strives to gain the best for people.
+             <br> we allow others to have the best experience in their benefits. 
+             <br>this business is for talented individuals who have the best experience in database </datagrid> and people who have amazing it knowledge.</b>
+        </div>
+
+
+        <div id="about_section" class="section" hidden>
+            <center>
+                <h2>About</h2>
+                <img src="images/a.jpg" alt="Company Picture" width="100" height="100">
+            </center>
+
+            <p>&emsp;&nbsp;&nbsp; Founded in 2000 by Jata,John and Kistraphian. Hot beans has always strived to be a leading company, exceptional employer and a positive force in our community.</p>
+            <p>&emsp;&nbsp;&nbsp; We are always striving to make our company stronger and hire people who have amazing skills to become part of our proffesional team. </p>
+            <p>&emsp; we are always happy to answer questions regarding our team or company.</p>
+            <p>&emsp;</p>
+        </div>
+
+        <div id="Teams_section" class="section" hidden>
+            <center>
+                <h2>Our Teams</h2>
+                <table>
+                    <tr>
+                        <td><img src="images/istockphoto-1413766112-170667a.jpg" alt="Company Picture" width="100" height="100"></td>
+                        <td><img src="images/image 2.png" alt="Company Picture" width="100" height="100"></td>
+                        <td><img src="images/software_engineer.jpeg.jpg" alt="Company Picture" width="100" height="100"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Dr jatta
+                           </td>
+                            <td>
+                                Mr Kistraphian
+                                </td>
+                                 <td>
+                                   Mr rizzaldo   
+                               </td>
+                            </tr>
+                             <tr>
+                               <td>
+                                <b> Web-developer 
+                                   <br>Website creation and upkeep are done by web developers. They are in charge of a website's general aesthetic. The technical elements of a website, such as its capacity and performance (website speed), are also handled by web developers (the maximum amount of traffic the site could handle at a given time).
+                                </b>
+                               </td>
+                                 <td>
+                                    <b>
+                                        cyber-security
+                                        <br>
+                                        Computer networks are shielded against hacker attacks and unauthorised access by cybersecurity experts. They achieve this by attempting to foresee and combat cyber threats as well as responding to security breaches when they do occur. In this position, you are crucial to safeguarding the crucial data of your company.
+                                       </b>
+                                   </td>
+                                    <td>
+                                        <b>
+                                           software-developer
+                                           <br>
+                                           Software developers use a variety of technologies and abilities to design, programme, create, deploy, and manage software. Additionally, they contribute to the creation of software systems that power devices and networks and maintain the functionality of those systems.
+                                        </b>
+                                       </td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+
+        <div id="contact_section" class="section" hidden>
+            <center>
+                <h2>Contact us</h2>
+            </center>
+            <form action="/action_page.php" style="justify-content:center">
+                &emsp;&emsp;&emsp;&emsp;&emsp;<label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" value=""><br><br>
+
+                &emsp;&emsp;&emsp;&emsp;&emsp;<label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <a href="https://www.instagram.com/"></a>
+
+                &emsp;&emsp;&emsp;&emsp;&emsp;<label for="mes">Message:</label><br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;<textarea id="mes" name="mes" rows="4" cols="50"></textarea><br><br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="submit" value="Submit">
+            </form>
+           
+        </div>
+
+        <div id="joinUs_section" class="section" hidden>
+            <center>
+                <h2>Join us</h2>
+            </center>
+            <form name="form1" action="" onsubmit="return validateEntry()">
+                &emsp;&emsp;&emsp;&emsp;&emsp;<label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" value=""><br><br>
+
+                &emsp;&emsp;&emsp;&emsp;&emsp;<label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+
+                &emsp;&emsp;&emsp;&emsp;&emsp;<label for="email">Email:</label>
+                <input type="text" id="email" name="email" value=""><br><br>
+
+                &emsp;&emsp;&emsp;&emsp;&emsp;<label for="notes">Notes:</label><br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<textarea id="notes" name="notes" rows="4" cols="50"></textarea><br><br>
+
+                &emsp;&emsp;&emsp;&emsp;&emsp;<b>Upload Your CV: </b>
+                <input type="file"
+                       id="file1"
+                       name="upload">
+                <br><br>
+
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="submit" value="Submit">
+            </form>          
+            
+        </div>
+
+      
+    </div>
+    
+    <script type="text/javascript">
+        var _about_section = document.getElementById('about_section');
+        var _home_section = document.getElementById('home_section');
+        var _contact_section = document.getElementById('contact_section');
+        var _joinUs_section = document.getElementById('joinUs_section');
+        var _Teams_section = document.getElementById('Teams_section');
+
+
+        document.getElementById('op_joinUs').onclick = function () {
+            _about_section.hidden = true;
+            _home_section.hidden = true;
+            _contact_section.hidden = true;
+            _joinUs_section.hidden = false;
+            _Teams_section.hidden = true;
+        }
+
+        document.getElementById('op_Teams').onclick = function () {
+            _about_section.hidden = true;
+            _home_section.hidden = true;
+            _contact_section.hidden = true;
+            _joinUs_section.hidden = true;
+            _Teams_section.hidden = false;
+        }
+
+        document.getElementById('op_About').onclick = function () {
+            _about_section.hidden = false;
+            _home_section.hidden = true;
+            _contact_section.hidden = true;
+            _joinUs_section.hidden = true;
+            _Teams_section.hidden = true;
+        }
+
+        document.getElementById('op_Contact').onclick = function () {
+            _about_section.hidden = true;
+            _home_section.hidden = true;
+            _contact_section.hidden = false;
+            _joinUs_section.hidden = true;
+            _Teams_section.hidden = true;
+        }
+
+        document.getElementById('op_Home').onclick = function () {
+            _about_section.hidden = true;
+            _home_section.hidden = false;
+            _contact_section.hidden = true;
+            _joinUs_section.hidden = true;
+            _Teams_section.hidden = true;
+        }
+
+        function validateEntry() {
+            //var fn = document.getElementById('fname').value;
+            var fn = document.forms["form1"]["fname"].value;
+            //alert(fn);
+            if (fn == null || fn == "") { alert("Please enter first name"); }
+                        
+            var ln = document.forms["form1"]["lname"].value;
+            //alert(ln);
+            if (ln == null || ln == "") { alert("Please enter last name"); }
+            
+
+        }
+    </script>
+</body>
+</html>
